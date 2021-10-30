@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solar system density</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="fluid-container">
+      <header>
+        <h1>Calculate a weight of an object on a planet</h1>
+        <div class="container">
+          <input type="text" id="mass" placeholder="Mass in Kilogram" />
+          <select id="selected">
+            <option value="none">--select planet--</option>
+            <option value="3.7">Mercury</option>
+            <option value="8.9">Venus</option>
+            <option value="9.8">Earth</option>
+            <option value="3.7">Mars</option>
+            <option value="1.6">Moon</option>
+            <option value="23.1">Jupiter</option>
+            <option value="9.0">Saturn</option>
+            <option value="8.7">Uranus</option>
+            <option value="11.0">Neptune</option>
+            <option value="0.07">Pluto</option>
+          </select>
+          <button class="btn" id="submit">Calculate weight</button>
+        </div>
+      </header>
+      <main>
+        <div class="flex-container">
+          <div class="flex-item image" id="img">
+            <img src="./assests/images/Earth.png" class="planet-image" />
+          </div>
+          <div class="flex-item description" id="message"></div>
+        </div>
+      </main>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
